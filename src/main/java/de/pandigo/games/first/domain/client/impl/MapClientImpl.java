@@ -2,6 +2,7 @@ package de.pandigo.games.first.domain.client.impl;
 
 import de.pandigo.games.first.domain.client.AbstractClient;
 import de.pandigo.games.first.domain.client.MapClient;
+import de.pandigo.games.first.domain.entity.map.MoveResult;
 import de.pandigo.games.first.domain.entity.map.Position;
 import de.pandigo.games.first.domain.type.CustomMediaType;
 import org.springframework.http.HttpEntity;
@@ -20,10 +21,10 @@ public class MapClientImpl extends AbstractClient implements MapClient {
     }
 
     @Override
-    public void moveObjectToPosition(final long objectId, final Position newPosition) {
+    public MoveResult moveObjectToPosition(final long objectId, final Position newPosition) {
         final HttpHeaders headers = new HttpHeaders();
         headers.add("Content-Type", CustomMediaType.APPLICATION_MAP_OBJECTMOVETOPOSITION_JSON);
         final HttpEntity<Position> entity = new HttpEntity<>(newPosition, headers);
-        this.restTemplate.postForLocation(URL_MAP_WITH_ID, entity, this.idAsMap("objectId", objectId));
+        return this.restTemplate.postForObject(URL_MAP_WITH_ID, entity, MoveResult.class, this.idAsMap("objectId", objectId));
     }
 }

@@ -1,5 +1,6 @@
 package de.pandigo.games.first.domain.client;
 
+import de.pandigo.games.first.domain.entity.map.MoveResult;
 import de.pandigo.games.first.domain.entity.map.Position;
 
 /**
@@ -21,6 +22,7 @@ public interface MapClient {
      *
      * @param objectId    A generic game object id which possibly can be moved
      * @param newPosition The new position which the object should be moved to
+     * @return The MoveResult containing information if the movement was successful
      */
-    void moveObjectToPosition(long objectId, Position newPosition);
+    MoveResult moveObjectToPosition(long objectId, Position newPosition);
 }

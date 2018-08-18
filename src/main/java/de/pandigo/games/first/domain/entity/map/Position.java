@@ -27,4 +27,9 @@ public class Position {
     public void setY(final long y) {
         this.y = y;
     }
+
+    @Override
+    public String toString() {
+        return String.format("x: %d y: %d", this.x, this.y);
+    }
 }
