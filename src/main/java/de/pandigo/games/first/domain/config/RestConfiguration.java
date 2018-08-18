@@ -1,4 +1,4 @@
-package de.pandigo.games.first.domain.configs;
+package de.pandigo.games.first.domain.config;
 
 import org.springframework.boot.web.client.RestTemplateBuilder;
 import org.springframework.context.annotation.Bean;

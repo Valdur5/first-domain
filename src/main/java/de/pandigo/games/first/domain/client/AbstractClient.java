@@ -1,4 +1,4 @@
-package de.pandigo.games.first.domain.clients;
+package de.pandigo.games.first.domain.client;
 
 import java.util.HashMap;
 import java.util.Map;

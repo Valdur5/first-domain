@@ -1,4 +1,4 @@
-package de.pandigo.games.first.domain.entities;
+package de.pandigo.games.first.domain.entity;
 
 public class Player {
 

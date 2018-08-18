@@ -1,4 +1,4 @@
-package de.pandigo.games.first.domain.types;
+package de.pandigo.games.first.domain.type;
 
 public class CustomMediaType {
     /**
