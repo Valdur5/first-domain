@@ -6,9 +6,10 @@ public class Player {
     private int level;
     private int exp;
 
-    public Player(){}
+    public Player() {
+    }
 
-    public Player(long playerId) {
+    public Player(final long playerId) {
         this.playerId = playerId;
     }
 
@@ -16,7 +17,7 @@ public class Player {
         return this.playerId;
     }
 
-    public void setPlayerId(long playerId) {
+    public void setPlayerId(final long playerId) {
         this.playerId = playerId;
     }
 
@@ -24,7 +25,7 @@ public class Player {
         return this.level;
     }
 
-    public void setLevel(int level) {
+    public void setLevel(final int level) {
         this.level = level;
     }
 
@@ -32,7 +33,7 @@ public class Player {
         return this.exp;
     }
 
-    public void setExp(int exp) {
+    public void setExp(final int exp) {
         this.exp = exp;
     }
 }
