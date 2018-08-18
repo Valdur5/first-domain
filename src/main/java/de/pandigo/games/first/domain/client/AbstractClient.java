@@ -1,5 +1,8 @@
 package de.pandigo.games.first.domain.client;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.client.RestTemplate;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -7,6 +10,9 @@ import java.util.Map;
  * Common methods shared by different REST clients.
  */
 public abstract class AbstractClient {
+
+    @Autowired
+    protected RestTemplate restTemplate;
 
     /**
      * Method for simplifying the creation of a map as the parameter for the id of an entity.

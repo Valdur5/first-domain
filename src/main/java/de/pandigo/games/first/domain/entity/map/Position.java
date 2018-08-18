@@ -4,6 +4,9 @@ public class Position {
     private long x;
     private long y;
 
+    public Position() {
+    }
+
     public Position(final long x, final long y) {
         this.x = x;
         this.y = y;
