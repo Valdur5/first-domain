@@ -2,8 +2,8 @@ package de.pandigo.games.first.domain.client.impl;
 
 import de.pandigo.games.first.domain.client.AbstractClient;
 import de.pandigo.games.first.domain.client.PlayerClient;
-import de.pandigo.games.first.domain.entity.Experience;
-import de.pandigo.games.first.domain.entity.Player;
+import de.pandigo.games.first.domain.entity.player.Experience;
+import de.pandigo.games.first.domain.entity.player.Player;
 import de.pandigo.games.first.domain.type.CustomMediaType;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpEntity;

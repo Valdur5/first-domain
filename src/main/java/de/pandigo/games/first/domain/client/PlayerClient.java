@@ -1,6 +1,6 @@
 package de.pandigo.games.first.domain.client;
 
-import de.pandigo.games.first.domain.entity.Player;
+import de.pandigo.games.first.domain.entity.player.Player;
 
 /**
  * Rest client for calling methods player related.
